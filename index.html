@@ -50,9 +50,16 @@
         <option value="unemployed">Unemployed</option>
       </select>
     </div>
+     <!-- Photo capture section -->
+     <div class="photo-capture">
+      <video id="video" width="100%" height="auto" autoplay></video>
+      <button id="captureBtn">Capture Photo</button>
+      <canvas id="canvas" style="display: none;"></canvas>
+      <input type="hidden" id="photo" name="photo">
+    </div>
     <button type="submit">Submit</button>
   </form>
 </div>
-
+<script src="script.js"></script>
 </body>
 </html>
