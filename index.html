@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online KYC Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Online KYC Form</h1>
+  <form id="kycForm" action="#" method="post">
+    <div class="form-group">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    </div>
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="pan_aadhaar">PAN Card / Aadhaar:</label>
+      <input type="text" id="pan_aadhaar" name="pan_aadhaar" placeholder="Enter your PAN card or Aadhaar number" required>
+    </div>
+    <div class="form-group">
+      <label for="signature">Signature:</label>
+      <input type="file" id="signature" name="signature" accept="image/*" required>
+    </div>
+    <div class="form-group">
+      <label for="income">Income Range:</label>
+      <select id="income" name="income" required>
+        <option value="">Select Income Range</option>
+        <option value="less_than_5l">Less than 5 Lakhs</option>
+        <option value="5l_to_10l">5 Lakhs to 10 Lakhs</option>
+        <option value="more_than_10l">More than 10 Lakhs</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="employment">Type of Employment:</label>
+      <select id="employment" name="employment" required>
+        <option value="">Select Employment Type</option>
+        <option value="salaried">Salaried</option>
+        <option value="self_employed">Self-employed</option>
+        <option value="business_owner">Business Owner</option>
+        <option value="unemployed">Unemployed</option>
+      </select>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
